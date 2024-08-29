@@ -1,0 +1,438 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1f1f1f;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url(img/header.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    width: 30%;
+    position: relative;
+    float: right;
+
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color:  #15b060;
+    transition: 0.7s;
+}
+
+#menu {
+    display: none;
+}
+.fas{
+    width: 30px;
+    color:#ffffff;
+    transition: 0.7s;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-txt{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.header-txt h1,h3, span{
+    font-size: 110px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgba(209, 13, 219, 0.945) ;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.header-txt span{
+    font-size: 25px;
+}
+.header-txt p{
+    color: #ffffff;
+    padding: 0 250px;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 25px;
+    background: linear-gradient(
+    90deg,
+    rgba(21, 219, 38, 0.963) 0%,
+    rgba(209, 13, 219, 0.945) 100%
+    );
+    color: #ffffff;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 25px 0;
+    border: 0;
+}
+.btn-1:hover{
+    background:#15b060;
+    transition: 0.7s;
+}
+.header-dir{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+.dir h3{
+    font-size: 18px;
+}
+.dir p{
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.bienvenido{
+    display: flex;
+}
+.bienvenido-1{
+    background-image:url(img/Bienvenido.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.bienvenido-2{
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+}
+h2{
+    font-size: 78px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 16px;
+    color: #afafaf;
+    margin: 25px 0;
+}
+.b1{
+    color:  #15b060;
+}
+
+.servicios{
+    padding: 100px 0;
+    text-align: center;
+}
+.servicios-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    border: 1px solid  #15b060;
+    width: 80px;
+}
+.servicios-txt p{
+    padding: 50px 150px;
+}
+.servicios-grupo{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 0;
+}
+.servicio-1{
+    background-color: #070707;
+    padding: 35px 25px;
+    margin: 0 10px;
+    border-radius: 15px;
+    border: 2px solid #15b060;
+}
+.servicio-1 img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+.servicio-1 h3{
+    font-size: 25px;
+    color: #ffffff;
+}
+.servicio-1 a{
+    color:  #15b060;
+    font-size: 16px;
+
+}
+
+.precios{
+    display: flex;
+}
+
+.precios-1{
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+}
+
+table{
+    margin: 50px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 20px;
+}
+th{
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+th:hover{
+    color: #15b060;
+    transition: 0.7s;
+}
+td{
+    color:  #15b060;
+    padding-bottom: 10px;
+}
+
+.precios-2{
+    background-image: url(img/plano.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.personal{
+    padding: 100px 0;
+    text-align: center;
+}
+.personal-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.personal-grupo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.personal-1{
+    text-align: center;
+}
+.personal-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+.personal-1 h3{
+    font-size: 22px;
+}
+.personal-1 p {
+    padding: 0 50px;
+}
+.personal-1 a{
+    color:  #15b060 ;
+}
+
+.footer-bg{
+    background-image: url(img/footer1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campo-1{
+    margin-bottom: 15px;
+}
+.campo{
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #0e0e0e;
+    border: 1px solid  #15b060; 
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+textarea{
+    width: 520px !important;
+}
+
+.footer-txt{
+    text-align: center;
+    padding: 10px;
+    background-color: #070707;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#1f1f1f;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-contenido{
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt{
+        margin-bottom: 15px;
+    }
+    .header-txt h1{
+        font-size: 90px;
+    }
+    .header-txt p{
+        padding: 0;
+        margin: 15px 0;
+    }
+    .header-dir{
+        flex-direction: column;
+    }
+    .dir p{
+        font-size: 18px;
+    }
+
+    .bienvenido{
+        flex-direction: column;
+    }
+    .bienvenido-1{
+        display: none;
+    }
+    .bienvenido-2{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 60px;
+        line-height: 80px;
+    }
+    p{
+        margin: 15px 0;
+    }
+
+    .servicios{
+        padding: 30px;
+    }
+    .servicios-txt p{
+        padding: 0;
+    }
+    .servicios-grupo{
+        flex-direction: column;
+        margin: 0;
+    }
+    .servicio-1{
+        margin: 0 0 20px 0;
+    }
+    .precios{
+        flex-direction: column;
+    }
+    .precios-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    table{
+        margin: 25px 0 0 0;
+    }
+    .precios-2{
+        display: none;
+    }
+    .personal{
+        padding: 30px;
+    }
+    .personal-grupo{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .personal-1{
+        margin-bottom: 25px;
+    }
+    .footer-bg{
+        padding: 30px;
+    }
+    textarea{
+        width: 250px !important;
+    }
+}
