@@ -44,7 +44,8 @@ body{
     width: 30%;
     position: relative;
     float: right;
-
+    color: #ffffff;
+    font-size: 50px;
 }
 
 .menu .navbar ul li{
@@ -71,6 +72,10 @@ body{
     width: 30px;
     color:#ffffff;
     transition: 0.7s;
+}
+.fab{
+    color: #ffffff;
+    width: 30px;
 }
 
 .menu label{
@@ -146,6 +151,13 @@ body{
     background-size: cover;
     width: 50%;
 }
+.bienvenido-1a{
+    background-image:url(img/+info1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
 .bienvenido-2{
     width: 50%;
     padding: 150px 250px 150px 100px;
@@ -166,6 +178,16 @@ p{
 }
 .b1{
     color:  #15b060;
+    display: block;
+    padding: 10px;
+}
+.b2{
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+}
+.b2:hover{
+    color: #15b060;
 }
 
 .servicios{
@@ -236,9 +258,11 @@ th{
     color: #ffffff;
     padding-bottom: 15px;
 }
-th:hover{
+th a i{
+    color: #ffffff;
+}
+th a i:hover{
     color: #15b060;
-    transition: 0.7s;
 }
 td{
     color:  #15b060;
@@ -328,6 +352,53 @@ textarea{
     padding: 10px;
     background-color: #070707;
 }
+
+.slider-box{
+    width: 900px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.texto h4{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+.slider-box img{
+    width: 100%;
+}
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+.A1{
+    text-align: center;
+}
+
 
 @media(max-width:991px){
     .menu{
@@ -435,4 +506,16 @@ textarea{
     textarea{
         width: 250px !important;
     }
+    .slider-box{
+        width: 400px;
+    }
+    .texto h4{
+        top: 40px;
+        padding: 0 25px;
+        font-size: 35px;
+    }
+    .b1{
+        flex-direction: column;
+    }
+
 }
